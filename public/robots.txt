@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://juanbri.dev
+
+# Sitemaps
+Sitemap: https://juanbri.dev/sitemap.xml
