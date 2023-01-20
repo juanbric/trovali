@@ -1,107 +1,163 @@
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Must haves */
 body {
-  max-width: 100vw;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  color: white;
+  background: #202731;
   overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100px;
+  padding: 100px 14px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.wrap {
+  max-width: 500px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* Fonts */
+.header {
+  line-height: 26px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.copy {
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.sub-copy {
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+/* Markdown */
+.markdown h2 {
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+.markdown h3 {
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 18px;
+  margin-bottom: 4px;
+}
+.markdown p {
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.64);
+  margin-bottom: 12px;
+}
+.markdown strong {
+  color: white;
+}
+.markdown a:hover {
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.64);
+  text-underline-offset: 2px;
+}
+.markdown a {
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.834);
+}
+.markdown img {
+  display: block;
+  margin: auto;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  border-radius: 22px;
+}
+.markdown li {
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.64);
+  margin-top: 6px;
+  margin-bottom: 10px;
+  margin-left: 16px;
+}
+.markdown ul {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.markdown li::before {
+  content: "-   ";
+  margin-right: 0.5em;
+}
+
+/* Colors */
+.red {
+  background: #dd3f31;
+}
+
+.pink {
+  background: #ff0066;
+}
+
+.blue {
+  background: #3c31dd;
+}
+
+.bg-blue {
+  background-color: #3c31dd;
+}
+
+.dark {
+  background: #0f0f10;
+}
+
+/* Utils */
+.shorten-p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.masonry-2-col {
+  column-count: 2;
+  column-gap: 24px;
+  row-gap: 32px;
+}
+
+.grid-item {
+  break-inside: avoid;
+  display: inline-block;
+}
+
+ /* Progress bar */
+ .progress-container {
+  position: fixed; /* position the progress bar on top of the page */
+  top: 0; /* align the progress bar to the top of the page */
+  left: 0;
+  right: 0;
+  height: 3px; /* set the height of the progress bar */
+  /* background-color: #ddd; set the background color of the progress bar */
+}
+
+.progress-indicator {
+  height: 100%; /* set the height of the progress indicator to fill the progress bar */
+  background-color: #3c31dd; /* set the background color of the progress indicator */
 }
