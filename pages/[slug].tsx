@@ -11,73 +11,73 @@ import { URL } from "@/config";
 import Link from "next/link";
 import BlogCard from "@/components/BlogCard";
 
-// Store contentful API keys into a client variable
-const client = createClient({
-  //@ts-ignore
-  space: process.env.CONTENTFUL_SPACE_ID,
-  //@ts-ignore
-  accessToken: process.env.CONTENTFUL_ACCESS_KEY,
-});
+// // Store contentful API keys into a client variable
+// const client = createClient({
+//   //@ts-ignore
+//   space: process.env.CONTENTFUL_SPACE_ID,
+//   //@ts-ignore
+//   accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+// });
 
-// Generates all different slugs we have in contentful
-export const getStaticPaths = async () => {
-  // Store blog content from our contentful space into a res variable
-  const res = await client.getEntries({
-    content_type: "blog",
-  });
+// // Generates all different slugs we have in contentful
+// export const getStaticPaths = async () => {
+//   // Store blog content from our contentful space into a res variable
+//   const res = await client.getEntries({
+//     content_type: "blog",
+//   });
 
-  // Returns the slug in the following form
-  // params: { slug: slug }
-  const paths = res.items.map((item: any) => {
-    return {
-      params: { slug: item.fields.slug },
-    };
-  });
+//   // Returns the slug in the following form
+//   // params: { slug: slug }
+//   const paths = res.items.map((item: any) => {
+//     return {
+//       params: { slug: item.fields.slug },
+//     };
+//   });
 
-  return {
-    paths,
-    fallback: true,
-  };
-};
+//   return {
+//     paths,
+//     fallback: true,
+//   };
+// };
 
-// Runs this function for every slug retrieved above
-export async function getStaticProps({ params }: { params: any }) {
-  const { items } = await client.getEntries({
-    content_type: "blog",
-    "fields.slug": params.slug,
-  });
+// // Runs this function for every slug retrieved above
+// export async function getStaticProps({ params }: { params: any }) {
+//   const { items } = await client.getEntries({
+//     content_type: "blog",
+//     "fields.slug": params.slug,
+//   });
 
-  const res = await client.getEntries({ content_type: "blog" });
+//   const res = await client.getEntries({ content_type: "blog" });
 
-  if (!items.length) {
-    return {
-      redirect: {
-        destination: "/",
-        permanent: false,
-      },
-    };
-  }
+//   if (!items.length) {
+//     return {
+//       redirect: {
+//         destination: "/",
+//         permanent: false,
+//       },
+//     };
+//   }
 
-  return {
-    props: { blog: items[0], blogs: res.items },
-    revalidate: 1,
-  };
-}
+//   return {
+//     props: { blog: items[0], blogs: res.items },
+//     revalidate: 1,
+//   };
+// }
 
 export const Slug = ({ blog, blogs }: { blog: any; blogs: any }) => {
-  if (!blog) return <Skeleton />;
-  console.log("blog", blog);
-  const { title, article, slug, img, description, metaDescription, category } =
-    blog.fields;
-  const imgUrl = img.fields.file.url;
-  const date = blog.sys.updatedAt;
-  const options = { year: "numeric", month: "short", day: "numeric" };
-  //@ts-ignore
-  const localDate = new Date(date).toLocaleDateString("es-ES", options);
+//   if (!blog) return <Skeleton />;
+//   console.log("blog", blog);
+//   const { title, article, slug, img, description, metaDescription, category } =
+//     blog.fields;
+//   const imgUrl = img.fields.file.url;
+//   const date = blog.sys.updatedAt;
+//   const options = { year: "numeric", month: "short", day: "numeric" };
+//   //@ts-ignore
+//   const localDate = new Date(date).toLocaleDateString("es-ES", options);
 
   return (
     <>
-      <Schema
+      {/* <Schema
         title={title}
         date={date}
         image={`https:${imgUrl}`}
@@ -134,7 +134,7 @@ export const Slug = ({ blog, blogs }: { blog: any; blogs: any }) => {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </>
   );
 };
