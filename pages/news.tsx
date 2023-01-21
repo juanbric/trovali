@@ -28,8 +28,8 @@ import Link from "next/link";
 
 const News = ({ blogs }: { blogs: any }) => {
   const description =
-    "Join me on a journey into the exciting world of web development... where I'll reveal insider tips and tricks to take your skills to the next LEVEL and become ...";
-  const title = "Blog | Briceno | Front End Developer";
+    "Simplify student permissions with our advanced face recognition technology. Upload photos and forms in one place, easily check permission status and ...";
+  const title = "Trovali | Face recognition | Student privacy compliance";
   const date = new Date();
   const image = "https://svgshare.com/i/pdv.svg";
   return (
@@ -44,17 +44,61 @@ const News = ({ blogs }: { blogs: any }) => {
       <MetaTag
         title={title}
         description={description}
-        url={undefined}
+        url={URL}
         image={image}
       />
-      <h2 className="header">Blog</h2>
-      <h3 className="copy mt-8 mb-12">
-        Whether you&apos;re a developer, designer, entrepreneur or just curious
-        about the digital world, I invite you to join me on this journey into
-        the exciting and ever-evolving world of web development.
-      </h3>
-      <div className="md:grid md:grid-cols-2 md:gap-8">
-        {/* {blogs?.map((article: any, i: any) => {
+      <div className="lg:flex lg:justify-center lg:items-center">
+        <div className="px-4 lg:px-8 w-auto lg:w-[1130px]">
+          <section className="pt-[52px] pb-8 md:py-[50px]">
+            <div className="md:grid md:grid-cols-3 md:gap-12 pt-8">
+              <BlogCard
+                img={"/melenti.svg"}
+                title={"ChatGPT is preparing for a new launch"}
+                description={
+                  "With the latest launch of OpenAI's start-up ChatGPT, the whole world has become mesmerized"
+                }
+              />
+              <BlogCard
+                img={"/melenti.svg"}
+                title={"ChatGPT is preparing for a new launch"}
+                description={
+                  "With the latest launch of OpenAI's start-up ChatGPT, the whole world has become mesmerized"
+                }
+              />
+              <BlogCard
+                img={"/melenti.svg"}
+                title={"ChatGPT is preparing for a new launch"}
+                description={
+                  "With the latest launch of OpenAI's start-up ChatGPT, the whole world has become mesmerized"
+                }
+              />
+              <BlogCard
+                img={"/melenti.svg"}
+                title={"ChatGPT is preparing for a new launch"}
+                description={
+                  "With the latest launch of OpenAI's start-up ChatGPT, the whole world has become mesmerized"
+                }
+              />
+              <BlogCard
+                img={"/melenti.svg"}
+                title={"ChatGPT is preparing for a new launch"}
+                description={
+                  "With the latest launch of OpenAI's start-up ChatGPT, the whole world has become mesmerized"
+                }
+              />
+              <BlogCard
+                img={"/melenti.svg"}
+                title={"ChatGPT is preparing for a new launch"}
+                description={
+                  "With the latest launch of OpenAI's start-up ChatGPT, the whole world has become mesmerized"
+                }
+              />
+            </div>
+          </section>
+        </div>
+      </div>
+
+      {/* {blogs?.map((article: any, i: any) => {
           const { title, slug, description } = article?.fields;
           const img = article?.fields.img.fields.file.url;
           return (
@@ -69,7 +113,6 @@ const News = ({ blogs }: { blogs: any }) => {
             </div>
           );
         })} */}
-      </div>
     </>
   );
 };
