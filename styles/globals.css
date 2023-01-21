@@ -11,20 +11,29 @@ body {
   overflow-x: hidden;
 }
 
-section {
+/* section {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100px;
   padding: 100px 16px;
-}
+} */
 
-.wrap {
-  max-width: 500px;
-}
 
 /* Fonts */
+.title {
+  line-height: 60px;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.sub-title {
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .header {
   line-height: 26px;
   font-size: 22px;
@@ -35,6 +44,12 @@ section {
   line-height: 28px;
   font-size: 23px;
   font-weight: 700;
+}
+
+.copy-big {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .copy {
@@ -124,7 +139,7 @@ section {
 }
 
 .blue {
-  background: #3c31dd;
+  background: #3d31dd;
 }
 
 .bg-blue {
@@ -137,7 +152,6 @@ section {
 
 .prev-background {
   background: #202731;
-  
 }
 
 /* Utils */
@@ -159,8 +173,8 @@ section {
   display: inline-block;
 }
 
- /* Progress bar */
- .progress-container {
+/* Progress bar */
+.progress-container {
   position: fixed; /* position the progress bar on top of the page */
   top: 0; /* align the progress bar to the top of the page */
   left: 0;
@@ -172,4 +186,8 @@ section {
 .progress-indicator {
   height: 100%; /* set the height of the progress indicator to fill the progress bar */
   background-color: #3c31dd; /* set the background color of the progress indicator */
+}
+
+.shadow-x {
+  box-shadow: 0px 20px 100px -5px rgba(0, 0, 0, 0.1);
 }
