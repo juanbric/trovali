@@ -74,7 +74,7 @@ export const ContactForm = () => {
       <div className="lg:flex lg:justify-center lg:items-center">
         <div className="px-4 lg:px-8 w-auto lg:w-[1130px]">
           <section className="">
-            <h1 className="logo">Don't be shy, say hi!</h1>
+            <h1 className="logo">Say hi!</h1>
             <Spacer size={12} />
             <div className="md:grid md:grid-cols-2 md:gap-12">
               <p>
