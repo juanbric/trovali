@@ -7,23 +7,31 @@ import Spacer from "@/components/Spacer";
 import { URL } from "@/config";
 
 export default function Home() {
-  const bio =
-    "GM. I'm Juan, a passionate Front End developer with a love for building dynamic and user-centric products. Experienced in various countries, I currently call the sunny Las Palmas de Gran Canaria home in Spain. Focused on clean code, beautiful design and product market fit. Constantly shipping and constantly learning.";
-  const title =
-    "Briceno | Front End Developer | Las Palmas de Gran Canaria Spain";
+  const description =
+    "Simplify student permissions with our advanced face recognition technology. Upload photos and forms in one place, easily check permission status and ...";
+  const title = "Trovali | Face recognition | Student privacy compliance";
   const date = new Date();
-  const image =
-    "https://svgshare.com/i/pdv.svg";
+  const image = "https://svgshare.com/i/pdv.svg";
 
   return (
     <>
-      <Schema title={title} date={date} image={image} description={bio} articleBody={undefined} />
-      <MetaTag title={title} description={bio} url={URL} image={image} />
+      <Schema
+        title={title}
+        date={date}
+        image={image}
+        description={description}
+        articleBody={undefined}
+      />
+      <MetaTag
+        title={title}
+        description={description}
+        url={URL}
+        image={image}
+      />
 
       {/* Header */}
-      <section className="grid grid-cols-4 gap-4 items-center">
-        <img src="/juan.png" className="w-auto rounded-full" />
-        <span className="col-span-3">
+      <section className="bg-blue h-screen">
+        
           <h2 className="header">Juan Pablo Briceno</h2>
           <h2 className="copy mt-1">Product-focused Front End Developer</h2>
           <a
@@ -34,7 +42,6 @@ export default function Home() {
           >
             @juanbrisol
           </a>
-        </span>
       </section>
 
       <Spacer size={35} />
@@ -43,7 +50,7 @@ export default function Home() {
       <section>
         <p>About</p>
         <Spacer size={7} />
-        <h1 className="copy">{bio}</h1>
+        <h1 className="copy">{description}</h1>
       </section>
 
       <Spacer size={49} />

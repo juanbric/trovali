@@ -6,18 +6,18 @@
 body {
   margin: 0;
   font-family: Poppins, sans-serif;
-  color: white;
-  background: #202731;
+  color: #0f0f10;
+  background: #fffffb;
   overflow-x: hidden;
 }
 
-main {
+section {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100px;
-  padding: 100px 14px;
+  padding: 100px 16px;
 }
 
 .wrap {
@@ -31,18 +31,24 @@ main {
   font-weight: 400;
 }
 
+.logo {
+  line-height: 28px;
+  font-size: 23px;
+  font-weight: 700;
+}
+
 .copy {
   line-height: 21px;
   font-size: 14px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.64);
+  color: #1f1f1f;
 }
 
 .sub-copy {
   line-height: 21px;
   font-size: 14px;
   font-weight: 400;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 /* Markdown */
@@ -127,6 +133,11 @@ main {
 
 .dark {
   background: #0f0f10;
+}
+
+.prev-background {
+  background: #202731;
+  
 }
 
 /* Utils */
