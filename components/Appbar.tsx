@@ -20,7 +20,7 @@ const Appbar = () => {
                 href={"/"}
               >
                 <img src="/logo.svg" className="w-[32px] h-[32px] shadow-xl" />
-                <h3 className="header self-center ml-1.5 logo">Trovali</h3>
+                <h3 className="self-center ml-1.5 logo">Trovali</h3>
               </Link>
             </div>
 
