@@ -15,16 +15,17 @@ export default function Home() {
   const date = new Date();
   const image = "https://svgshare.com/i/pdv.svg";
 
-  const headerTitle = "Shaping the iGaming frontend of tomorrow.";
+  const headerTitle =
+    "Simplify student photo management with face recognition";
   const headerSubTitle =
-    "Hello, we are Shape Games. A new breed that combines the best in creative thinking, strategy and technology led by world-class execution at speed to drive customer engagement and deliver sustainable growth through trailblazing iGaming solutions.";
+    "Hello, we are Trovali. A new company harnessing the power of AI to streamline student photo management for schools. Our technology provides a clear understanding of which students have granted permission for their pictures to be shared externally, and automatically organizes photos by student identity for easy searchability.";
 
   const secondTitle =
-    "Native frontend offerings made to stand out and stick around.";
+    "Easy to identify students in pictures, store and find their photos, and track their privacy permissions.";
   const secondSubTitle =
-    "Shape Games is an award-winning digital B-to-B platform and service provider for the iGaming industry. Our highly customisable native frontend is one of a kind, as it brings customer focused product development known from Silicon Valley startups to the gaming space.";
+    "Managing student photos can be a challenging task for schools, especially when it comes to the different privacy requirements each student has. That's where our highly customizable, one-of-a-kind solution comes in.";
   const secondCopy =
-    "We operate across Europe, North America and South America with our award-winning native omni-channel frontend platform, alongside our agnostic control panel that makes operations and integration of providers simple, quick and cost effective. The module-based solution is state-of-the-art and tested at scale with a number of market leading clients. Shape Games also delivers data warehouse setup and data management services as well as marketing services with a team of profiles that have successfully built, launched and operated iGaming business at scale.";
+    "Our platform provides schools with a clear understanding of which students have granted permission for their pictures to be shared externally, ensuring compliance with student privacy laws. Additionally, the platform automatically organizes photos by student identity, making it easy to search and locate any student's photos, saving time and effort for school staff. This not only helps schools to keep student privacy but also makes it easier for staff to manage, organize and access student photos, and help them to use them for educational purposes. Trovali's technology is the ultimate solution for schools looking to efficiently manage student photos while ensuring compliance with student privacy.";
   const platformHighlights =
     "Our native platform offers a rock solid, fluid and best-in-class betting experience, built to be continously improved upon and expanded with new features.";
   const featureOneTitle = "Feature";
