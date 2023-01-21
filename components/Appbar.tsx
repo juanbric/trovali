@@ -50,7 +50,7 @@ const Appbar = () => {
 
       {/* Pequeno */}
       <div className="block md:hidden">
-        <Menu maxW='50px'>
+        <Menu>
           <div className="hover:scale-110 transform-gpu ease-in-out duration-300">
             <MenuButton
               as={IconButton}
