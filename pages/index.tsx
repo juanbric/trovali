@@ -5,6 +5,7 @@ import Projects, { gigs } from "@/components/Projects";
 import Schema from "@/components/Schema";
 import Spacer from "@/components/Spacer";
 import { URL } from "@/config";
+import Link from "next/link";
 
 export default function Home() {
   const description =
@@ -12,6 +13,10 @@ export default function Home() {
   const title = "Trovali | Face recognition | Student privacy compliance";
   const date = new Date();
   const image = "https://svgshare.com/i/pdv.svg";
+
+  const headerTitle = "Shaping the iGaming frontend of tomorrow.";
+  const headerSubTitle =
+    "Hello, we are Shape Games. A new breed that combines the best in creative thinking, strategy and technology led by world-class execution at speed to drive customer engagement and deliver sustainable growth through trailblazing iGaming solutions.";
 
   return (
     <>
@@ -30,83 +35,23 @@ export default function Home() {
       />
 
       {/* Header */}
-      <section className="bg-blue h-screen">
-        
-          <h2 className="header">Juan Pablo Briceno</h2>
-          <h2 className="copy mt-1">Product-focused Front End Developer</h2>
-          <a
-            href={"https://twitter.com/juanbrisol"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="sub-copy hover:underline"
-          >
-            @juanbrisol
-          </a>
+      <section className="h-screen">
+        <div className="grid grid-cols-2">
+          <div className="py-[128px]">
+            <div className="title mb-2">{headerTitle}</div>
+            <div className="sub-title mb-6">{headerSubTitle}</div>
+              <Link
+                className="hover:bg-[#1b1393] bg-blue copy-big text-white py-2 rounded-[6px] px-4"
+                href={"/about"}
+              >
+                Learn more
+              </Link>
+          </div>
+          <div></div>
+        </div>
       </section>
 
       <Spacer size={35} />
-
-      {/* Bio */}
-      <section>
-        <p>About</p>
-        <Spacer size={7} />
-        <h1 className="copy">{description}</h1>
-      </section>
-
-      <Spacer size={49} />
-
-      {/* CV */}
-      <section>
-        <h2>Work Experience</h2>
-        <Spacer size={35} />
-        {careerPath.map((experience, i) => {
-          return (
-            <Experience
-              period={experience.period}
-              title={experience.title}
-              workLink={experience.workLink}
-              description={experience.description}
-              tech={experience.tech}
-              key={i}
-            />
-          );
-        })}
-      </section>
-      <Spacer size={15} />
-
-      {/* Side Projects */}
-      <section>
-        <h2>Side Projects</h2>
-        <Spacer size={35} />
-        {gigs.map((project, i) => {
-          return (
-            <Projects
-              period={project.period}
-              title={project.title}
-              workLink={project.workLink}
-              description={project.description}
-              tech={project.tech}
-              img={project.img}
-              key={i}
-            />
-          );
-        })}
-      </section>
-
-      <section>
-        <h2>Links</h2>
-        <Spacer size={35} />
-        {myStuff.map((stuff, i) => {
-          return (
-            <Links
-              platform={stuff.platform}
-              link={stuff.link}
-              userName={stuff.userName}
-              key={i}
-            />
-          );
-        })}
-      </section>
     </>
   );
 }
