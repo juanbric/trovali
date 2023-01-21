@@ -45,7 +45,7 @@ const Appbar = () => {
                 className="bg-blue hover:bg-[#1b1393] text-white py-2 rounded-[6px] px-4 "
                 href={"/contact"}
               >
-                Contact
+                Get in touch
               </Link>
             </div>
 
@@ -67,7 +67,7 @@ const Appbar = () => {
                     variant="filled"
                   />
                 </div>
-                <MenuList minW={"30px"} className="flex-col flex">
+                <MenuList className="flex-col flex">
                   <MenuItem>
                     <Link className="pl-4 py-1" href={"/about"}>
                       About
@@ -95,10 +95,10 @@ const Appbar = () => {
                   </MenuItem>
 
                   <Link
-                    className="bg-blue text-white py-2 rounded-[6px] px-4 mx-4 my-1 w-[88px]"
+                    className="bg-blue text-white py-2 rounded-[6px] px-4 mx-4 my-1 w-auto"
                     href={"/contact"}
                   >
-                    Contact
+                    Get in touch
                   </Link>
                 </MenuList>
               </Menu>
