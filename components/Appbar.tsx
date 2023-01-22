@@ -29,16 +29,16 @@ const Appbar = () => {
               <Link className="" href={"/about"}>
                 About
               </Link>
-              <Link className="px-4" href={"/features"}>
+              {/* <Link className="px-4" href={"/features"}>
                 Features
               </Link>
               <Link className="" href={"/benefits"}>
                 Benefits
-              </Link>
-              <Link className="px-4" href={"/pricing"}>
+              </Link> */}
+              <Link className="px-6" href={"/pricing"}>
                 Pricing
               </Link>
-              <Link className="pr-4" href={"/news"}>
+              <Link className="pr-6" href={"/news"}>
                 News
               </Link>
               <Link
@@ -73,7 +73,7 @@ const Appbar = () => {
                       About
                     </Link>
                   </MenuItem>
-                  <MenuItem>
+                  {/* <MenuItem>
                     <Link className="pl-4 py-1" href={"/features"}>
                       Features
                     </Link>
@@ -82,7 +82,7 @@ const Appbar = () => {
                     <Link className="pl-4 py-1" href={"/benefits"}>
                       Benefits
                     </Link>
-                  </MenuItem>
+                  </MenuItem> */}
                   <MenuItem>
                     <Link className="pl-4 py-1" href={"/pricing"}>
                       Pricing

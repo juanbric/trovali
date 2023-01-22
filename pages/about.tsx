@@ -8,25 +8,25 @@ const about = () => {
   const date = new Date();
   const image = "https://svgshare.com/i/pdv.svg";
 
-  const headerTitle = "Shaping the iGaming frontend of tomorrow.";
+  const headerTitle = "Shaping the management of student photos.";
   const secondTitle =
-  "Building upon a decade of experience delivering best-in-class solutions to some of the world’s most renowned companies, we founded Shape Games to bring the same proven approach to the iGaming industry.";
-const secondSubTitle =
-  "Shape Games is an award-winning digital B-to-B platform and service provider for the iGaming industry. Our highly customisable native frontend is one of a kind, as it brings customer focused product development known from Silicon Valley startups to the gaming space.";
-const secondCopy =
-  "We operate across Europe, North America and South America with our award-winning native omni-channel frontend platform, alongside our agnostic control panel that makes operations and integration of providers simple, quick and cost effective. The module-based solution is state-of-the-art and tested at scale with a number of market leading clients. Shape Games also delivers data warehouse setup and data management services as well as marketing services with a team of profiles that have successfully built, launched and operated iGaming business at scale.";
-  
-  const platformHighlights =
-  "Our native platform offers a rock solid, fluid and best-in-class betting experience, built to be continously improved upon and expanded with new features.";
-const featureOneTitle = "Feature";
-const featureOneDescription =
-  "Get personal recommendations, based on your betting history, preferences and user insights. We use machine learning to lay out the app to match your interests and preferred sports, teams, leagues and athletes.";
-const featureTwoTitle = "Feature";
-const featureTwoDescription =
-  "Get personal recommendations, based on your betting history, preferences and user insights. We use machine learning to lay out the app to match your interests and preferred sports, teams, leagues and athletes.";
-const featureThreeTitle = "Feature";
-const featureThreeDescription =
-  "Get personal recommendations, based on your betting history, preferences and user insights. We use machine learning to lay out the app to match your interests and preferred sports, teams, leagues and athletes.";
+    "Utilizing the latest technology to streamline student photo management for schools. ";
+  const secondSubTitle =
+    "The core feature of our application is the ability to automatically identify which students have granted permission for their pictures to be shared externally. This is accomplished by using face detection and recognition technology to analyze the photos that are uploaded to the platform. The platform compares the faces in the photos to a reference photo of each student, and uses this information to determine which students have given permission for their photos to be shared.";
+  const secondCopy =
+    "The platform also automatically organizes photos by student identity, making it easy for school staff to search and locate any student's photos. This feature is also enabled by our machine learning algorithms to analyze the facial features of each student in the photos and match them to the reference photo. The platform also provides a private database where all the students' photos are stored, in this way, the school staff can access them easily, but they are also protected by a password and an access management system, ensuring that only authorized personnel can access the database.";
+
+  const faceRecognition =
+    "Face recognition is a technology that uses computer algorithms to locate and identify human faces in digital images or videos. The technology can be used for a variety of applications, such as security systems, photo tagging, and biometrics. The process of face recognition typically involves three main steps:";
+  const featureOneTitle = "Face detection";
+  const featureOneDescription =
+    "This step involves identifying the presence of a face in an image or video. This is typically done by analyzing the image or video for patterns and features that are commonly associated with faces, such as eyes, noses, and mouths.";
+  const featureTwoTitle = "Face alignment";
+  const featureTwoDescription =
+    "Once a face is detected, it needs to be aligned in a standard position so that it can be easily compared to other faces. This step is done by identifying the key facial landmarks, such as the eyes, nose and mouth, and aligning the face based on these landmarks.";
+  const featureThreeTitle = "Face recognition";
+  const featureThreeDescription =
+    "After the face is aligned, the final step is to compare it to a database of known faces to identify the individual. This is typically done by extracting unique features from the face, such as the distance between the eyes or the shape of the jawline, and comparing these features to a database of known faces.";
 
   return (
     <>
@@ -44,7 +44,6 @@ const featureThreeDescription =
         image={image}
       />
 
-
       <div className="lg:flex lg:justify-center lg:items-center">
         <div className="px-4 lg:px-8 w-auto lg:w-[1130px]">
           <section>
@@ -60,51 +59,55 @@ const featureThreeDescription =
         </div>
       </div>
 
- <section className="shadow-x">
-      <div className="lg:flex lg:justify-center lg:items-center">
-        <div className="px-4 lg:px-8 w-auto lg:w-[1130px]">
-          <div className="md:grid md:grid-cols-2 md:gap-8">
-            <div className="pt-[52px] pb-8 md:py-[128px]">
-              <div className="sub-title">{secondTitle}</div>
-            </div>
-            <div className="pb-[52px] md:py-[128px] ">
-              <div className="mb-6">{secondSubTitle}</div>
-              <div className="">{secondCopy}</div>
+      <section className="shadow-x">
+        <div className="lg:flex lg:justify-center lg:items-center">
+          <div className="px-4 lg:px-8 w-auto lg:w-[1130px]">
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div className="pt-[52px] pb-8 md:py-[178px] flex flex-col">
+                <img src="/lena.svg" className="max-w-[400px] self-center items-center justify-center rounded-[6px]" />
+              </div>
+              <div className="pb-[52px] md:py-[128px] ">
+              <div className="sub-title pb-8">{secondTitle}</div>
+
+                <div className="mb-6">{secondSubTitle}</div>
+                <div className="">{secondCopy}</div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <div className="lg:flex lg:justify-center lg:items-center">
+        <div className="px-4 lg:px-8 w-auto lg:w-[1130px]">
+          <section className="pt-[52px] pb-8 md:py-[88px] flex flex-col items-center justify-center">
+            <div className="text-start md:grid md:grid-cols-3">
+              <p className="title text-[#3c31dd] pb-4 md:col-span-2">
+                How our technology works
+              </p>
+              <h2 className="sub-title mb-16 md:col-span-2">
+                {faceRecognition}
+              </h2>
+            </div>
+            <div className="text-start md:grid md:grid-cols-3 md:gap-16">
+              <div className="flex flex-col max-w-[370px]">
+                <img src="/detection.svg" className="max-w-[160px]" />
+                <h2 className="logo pt-6 pb-2">{featureOneTitle}</h2>
+                <h3 className="pb-16 md:pb-0">{featureOneDescription}</h3>
+              </div>
+              <div className="flex flex-col max-w-[370px]">
+                <img src="/alignment.svg" className="max-w-[160px]" />
+                <h2 className="logo pt-6 pb-2">{featureTwoTitle}</h2>
+                <h3 className="pb-16 md:pb-0">{featureTwoDescription}</h3>
+              </div>
+              <div className="flex flex-col max-w-[370px]">
+                <img src="/recognition.svg" className="max-w-[160px]" />
+                <h2 className="logo pt-6 pb-2">{featureThreeTitle}</h2>
+                <h3 className="pb-16 md:pb-0">{featureThreeDescription}</h3>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
-    </section>
-
-    <div className="lg:flex lg:justify-center lg:items-center">
-      <div className="px-4 lg:px-8 w-auto lg:w-[1130px]">
-        <section className="pt-[52px] pb-8 md:py-[88px] flex flex-col items-center justify-center">
-          <div className="text-start md:grid md:grid-cols-3">
-            <p className="title text-[#3c31dd] pb-4 md:col-span-2">How our technology works</p>
-            <h2 className="sub-title mb-16 md:col-span-2">{platformHighlights}</h2>
-          </div>
-          <div className="text-start md:grid md:grid-cols-3 md:gap-16">
-            <div className="flex flex-col max-w-[370px]">
-              <img src="/logo.svg" className="" />
-              <h2 className="logo pt-6 pb-2">{featureOneTitle}</h2>
-              <h3 className="pb-16 md:pb-0">{featureOneDescription}</h3>
-            </div>
-            <div className="flex flex-col max-w-[370px]">
-              <img src="/logo.svg" className="" />
-              <h2 className="logo pt-6 pb-2">{featureTwoTitle}</h2>
-              <h3 className="pb-16 md:pb-0">{featureTwoDescription}</h3>
-            </div>
-            <div className="flex flex-col max-w-[370px]">
-              <img src="/logo.svg" className="" />
-              <h2 className="logo pt-6 pb-2">{featureThreeTitle}</h2>
-              <h3 className="pb-16 md:pb-0">{featureThreeDescription}</h3>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-
-
     </>
   );
 };

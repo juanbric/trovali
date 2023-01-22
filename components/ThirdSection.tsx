@@ -24,18 +24,18 @@ const ThirdSection = ({
             <h2 className="sub-title mb-16">{platformHighlights}</h2>
           </div>
           <div className="md:grid md:grid-cols-3 md:gap-16">
-            <div className="text-center flex flex-col max-w-[370px]">
-              <img src="/logo.svg" className="" />
+            <div className="text-center flex flex-col max-w-[370px]"> 
+              <img src="/unlocking.svg" className="max-w-[160px] self-center shadow-xl rounded-full" />
               <h2 className="logo pt-6 pb-2">{featureOneTitle}</h2>
               <h3 className="pb-16 md:pb-0">{featureOneDescription}</h3>
             </div>
             <div className="text-center flex flex-col max-w-[370px]">
-              <img src="/logo.svg" className="" />
+              <img src="/book.svg" className="max-w-[160px] self-center shadow-xl rounded-full" />
               <h2 className="logo pt-6 pb-2">{featureTwoTitle}</h2>
               <h3 className="pb-16 md:pb-0">{featureTwoDescription}</h3>
             </div>
             <div className="text-center flex flex-col max-w-[370px]">
-              <img src="/logo.svg" className="" />
+              <img src="/trade.svg" className="max-w-[160px] self-center shadow-xl rounded-full" />
               <h2 className="logo pt-6 pb-2">{featureThreeTitle}</h2>
               <h3 className="pb-16 md:pb-0">{featureThreeDescription}</h3>
             </div>
