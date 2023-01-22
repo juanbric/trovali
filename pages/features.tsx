@@ -31,7 +31,7 @@ const features = () => {
 
   return (
     <>
-      <Schema
+      {/* <Schema
         title={title}
         date={date}
         image={image}
@@ -107,7 +107,7 @@ const features = () => {
           </div>
         </div>
       </section>
-     
+      */}
     </>
   );
 };

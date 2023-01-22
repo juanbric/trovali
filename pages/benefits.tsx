@@ -31,7 +31,7 @@ const benefits = () => {
 
   return (
     <>
-      <Schema
+      {/* <Schema
         title={title}
         date={date}
         image={image}
@@ -87,7 +87,7 @@ const benefits = () => {
           </div>
         </section>
       </div>
-    </div>
+    </div> */}
 
     </>
   );

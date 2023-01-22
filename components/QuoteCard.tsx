@@ -20,17 +20,16 @@ const QuoteCard = ({jpQuote}:{jpQuote:string}) => {
               </div>
               <div className="py-[52px] px-8 md:col-span-2 justify-between flex flex-col bg-gradient-to-r from-[#e8e7fb] to-[#fffffb]">
                 <div className="header mb-6">
-                  75% of organizations report that Trello delivers value to
-                  their business within 30 days.
+                The facial recognition market value is expected to reach $8.5 billion by 2025—a significant growth from $3.8 billion in 2020 as organizations realize its immense business potential.
                 </div>
                 <div className="flex flex-col">
                   <a
-                    href={""}
+                    href={"https://www.marketsandmarkets.com/Market-Reports/facial-recognition-market-995.html"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline copy"
                   >
-                    AI survey on facial detection
+                    Markets and Markets, 2020
                   </a>
                 </div>
               </div>
