@@ -75,42 +75,6 @@ export default function Home() {
 
       <QuoteCard jpQuote={jpQuote} />
 
-      <div className="lg:flex lg:justify-center lg:items-center">
-        <div className="px-4 lg:px-8 w-auto lg:w-[1130px]">
-          <section className="pt-[52px] pb-8 md:py-[50px]">
-            <p className="title pb-4">Latest news</p>
-            <Link
-              href={"/news"}
-              className="font-bold hover:underline text-[#3c31dd]"
-            >
-              All news
-            </Link>
-            <div className="md:grid md:grid-cols-3 md:gap-12 pt-8">
-              <BlogCard
-                img={"/melenti.svg"}
-                title={"ChatGPT is preparing for a new launch"}
-                description={
-                  "With the latest launch of OpenAI's start-up ChatGPT, the whole world has become mesmerized"
-                }
-              />
-              <BlogCard
-                img={"/melenti.svg"}
-                title={"ChatGPT is preparing for a new launch"}
-                description={
-                  "With the latest launch of OpenAI's start-up ChatGPT, the whole world has become mesmerized"
-                }
-              />
-              <BlogCard
-                img={"/melenti.svg"}
-                title={"ChatGPT is preparing for a new launch"}
-                description={
-                  "With the latest launch of OpenAI's start-up ChatGPT, the whole world has become mesmerized"
-                }
-              />
-            </div>
-          </section>
-        </div>
-      </div>
     </>
   );
 }
