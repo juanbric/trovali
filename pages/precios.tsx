@@ -3,7 +3,7 @@ import Schema from "@/components/Schema";
 import Link from "next/link";
 import React from "react";
 
-const pricing = () => {
+const Precios = () => {
   const description =
     "Simplify student permissions with our advanced face recognition technology. Upload photos and forms in one place, easily check permission status and ...";
   const title = "Trovali | Face recognition | Student privacy compliance";
@@ -33,9 +33,7 @@ const pricing = () => {
         <div className="px-4 lg:px-8 w-auto lg:w-[1130px]">
           <div className="md:grid md:grid-cols-2 md:gap-14">
             <div className="pt-[52px] pb-8 md:py-[128px] flex-col flex items-start justify-center">
-            <h1 className="title-mobile md:title mb-4">
-                  Precios
-                </h1>
+              <h1 className="title-mobile md:title mb-4">Precios</h1>
               <div className="mb-6 copy-big">{secondSubTitle}</div>
               <Link
                 className="hover:bg-[#1b1393] bg-blue copy-big text-white py-3 rounded-[6px] px-6"
@@ -54,4 +52,4 @@ const pricing = () => {
   );
 };
 
-export default pricing;
+export default Precios;

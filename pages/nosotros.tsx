@@ -2,7 +2,7 @@ import MetaTag from "@/components/MetaTag";
 import Schema from "@/components/Schema";
 import Link from "next/link";
 
-const about = () => {
+const Nosotros = () => {
   const description =
     "Simplifica los permisos estudiantiles con nuestra avanzada tecnología de reconocimiento facial. Acate el cumplimiento GDPR de la privacidad estudiantil. Cargue fotos y formularios en un solo lugar, verifique fácilmente el estado de los permisos y...";
   const title = "Nosotros | Trovali | Reconocimiento facial";
@@ -77,7 +77,7 @@ const about = () => {
             <div className="py-8 md:py-20">
               <div className="flex-col flex md:flex-row md:gap-14 items-center justify-center">
                 <div className="">
-                <img
+                  <img
                     src="/lena.svg"
                     className="md:max-w-[500px] self-center items-center justify-center rounded-[6px]"
                   />
@@ -107,17 +107,26 @@ const about = () => {
             </div>
             <div className="text-start md:grid md:grid-cols-3 md:gap-16">
               <div className="flex flex-col max-w-[370px]">
-                <img src="/detection.png" className="max-w-[260px] max-h-[150px] self-center" />
+                <img
+                  src="/detection.png"
+                  className="max-w-[260px] max-h-[150px] self-center"
+                />
                 <h2 className="logo pt-6 pb-2">{featureOneTitle}</h2>
                 <h3 className="pb-16 md:pb-0">{featureOneDescription}</h3>
               </div>
               <div className="flex flex-col max-w-[370px]">
-                <img src="/alignment.png" className="max-w-[260px] max-h-[150px] self-center" />
+                <img
+                  src="/alignment.png"
+                  className="max-w-[260px] max-h-[150px] self-center"
+                />
                 <h2 className="logo pt-6 pb-2">{featureTwoTitle}</h2>
                 <h3 className="pb-16 md:pb-0">{featureTwoDescription}</h3>
               </div>
               <div className="flex flex-col max-w-[370px]">
-                <img src="/recognition.png" className="max-w-[260px] max-h-[150px] self-center" />
+                <img
+                  src="/recognition.png"
+                  className="max-w-[260px] max-h-[150px] self-center"
+                />
                 <h2 className="logo pt-6 pb-2">{featureThreeTitle}</h2>
                 <h3 className="pb-16 md:pb-0">{featureThreeDescription}</h3>
               </div>
@@ -129,4 +138,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default Nosotros;

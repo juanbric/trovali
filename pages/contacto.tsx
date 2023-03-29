@@ -6,7 +6,7 @@ import Schema from "../components/Schema";
 import { SimpleModal } from "../components/SimpleModal";
 import Spacer from "../components/Spacer";
 
-export const ContactForm = () => {
+export const Contacto = () => {
   const [successModal, setSuccessModal] = useState<boolean>(false);
 
   const handleKeyDown = (e: any) => {
@@ -38,7 +38,6 @@ export const ContactForm = () => {
   const title = "Trovali | Face recognition | Student privacy compliance";
   const date = new Date();
   const image = "https://svgshare.com/i/pdv.svg";
-  const headerTitle = "Shaping the iGaming frontend of tomorrow.";
 
   return (
     <>
@@ -64,18 +63,18 @@ export const ContactForm = () => {
                 <img
                   src="/contact.png"
                   className="rounded-[6px] md:max-w-[500px] md:mb-0"
-                  />
+                />
               </div>
               <div className="pb-[52px] md:py-[128px] md:pb-0">
                 <p className="title mb-8">¡Hola!</p>
-                  <p className="mb-8">
-                    No dudes en contactarnos para hablar sobre cómo podemos
-                    trabajar juntos para simplificar la gestión de fotos de
-                    estudiantes en tu escuela. Estamos aquí para responder a
-                    cualquier pregunta que puedas tener. Ponte en contacto con
-                    nosotros hoy mismo para conocer más sobre nuestra solución
-                    innovadora.
-                  </p>
+                <p className="mb-8">
+                  No dudes en contactarnos para hablar sobre cómo podemos
+                  trabajar juntos para simplificar la gestión de fotos de
+                  estudiantes en tu escuela. Estamos aquí para responder a
+                  cualquier pregunta que puedas tener. Ponte en contacto con
+                  nosotros hoy mismo para conocer más sobre nuestra solución
+                  innovadora.
+                </p>
                 <form onSubmit={handleSubmit} className="">
                   <div className="flex flex-col md:flex-row gap-4">
                     <InputField
@@ -151,4 +150,4 @@ const InputField = ({
   );
 };
 
-export default ContactForm;
+export default Contacto;
