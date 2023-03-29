@@ -6,7 +6,7 @@ import Schema from "../components/Schema";
 import { SimpleModal } from "../components/SimpleModal";
 import Spacer from "../components/Spacer";
 
-export const ContactForm = () => {
+export const Contacto = () => {
   const [successModal, setSuccessModal] = useState<boolean>(false);
 
   const handleKeyDown = (e: any) => {
@@ -38,7 +38,6 @@ export const ContactForm = () => {
   const title = "Trovali | Face recognition | Student privacy compliance";
   const date = new Date();
   const image = "https://svgshare.com/i/pdv.svg";
-  const headerTitle = "Shaping the iGaming frontend of tomorrow.";
 
   return (
     <>
@@ -52,7 +51,7 @@ export const ContactForm = () => {
       <MetaTag
         title={title}
         description={description}
-        url={URL}
+        url={URL + "contacto"}
         image={image}
       />
 
@@ -61,32 +60,38 @@ export const ContactForm = () => {
           <section className="">
             <div className="md:grid md:grid-cols-2 md:gap-14">
               <div className="py-[52px] md:py-[128px]">
-                <p className="title mb-8">Say hi!</p>
-                <p>
-                  Don&#39;t hesitate to reach out to us to discuss how we can work
-                  together to streamline student photo management for your
-                  school. We&#39;re here to answer any questions you may have.
-                  Contact us today to learn more about our innovative solution.
-                </p>
+                <img
+                  src="/contact.png"
+                  className="rounded-[6px] md:max-w-[500px] md:mb-0"
+                />
               </div>
               <div className="pb-[52px] md:py-[128px] md:pb-0">
+                <p className="title mb-8">¡Hola!</p>
+                <p className="mb-8">
+                  No dudes en contactarnos para hablar sobre cómo podemos
+                  trabajar juntos para simplificar la gestión de fotos de
+                  estudiantes en tu escuela. Estamos aquí para responder a
+                  cualquier pregunta que puedas tener. Ponte en contacto con
+                  nosotros hoy mismo para conocer más sobre nuestra solución
+                  innovadora.
+                </p>
                 <form onSubmit={handleSubmit} className="">
-                  <InputField
-                    name={"user_name"}
-                    copy={"Your name"}
-                    type={"text"}
-                  />
-                  <Spacer size={16} />
-
-                  <InputField
-                    name={"user_email"}
-                    copy={"Your email"}
-                    type={"email"}
-                  />
+                  <div className="flex flex-col md:flex-row gap-4">
+                    <InputField
+                      name={"user_name"}
+                      copy={"Tu nombre"}
+                      type={"text"}
+                    />
+                    <InputField
+                      name={"user_email"}
+                      copy={"Tu email"}
+                      type={"email"}
+                    />
+                  </div>
                   <Spacer size={16} />
 
                   <label className="" htmlFor="message">
-                    Your message
+                    Tu mensaje
                   </label>
                   <Spacer size={8} />
                   <textarea
@@ -98,9 +103,9 @@ export const ContactForm = () => {
                   <Spacer size={16} />
                   <button
                     type="submit"
-                    className="px-4 py-2 bg-blue text-white hover:bg-[#1b1393] rounded-[6px]"
+                    className="px-6 py-3 bg-blue text-white hover:bg-[#1b1393] rounded-[6px]"
                   >
-                    Send
+                    Envia
                   </button>
                 </form>
               </div>
@@ -129,7 +134,7 @@ const InputField = ({
   type: string;
 }) => {
   return (
-    <>
+    <div className="flex flex-col">
       <label className="" htmlFor={name}>
         {copy}
       </label>
@@ -141,8 +146,8 @@ const InputField = ({
         required
       />
       <Spacer size={16} />
-    </>
+    </div>
   );
 };
 
-export default ContactForm;
+export default Contacto;
