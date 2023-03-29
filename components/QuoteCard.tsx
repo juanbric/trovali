@@ -16,11 +16,11 @@ const QuoteCard = ({jpQuote}:{jpQuote:string}) => {
                 >
                   Juan Pablo Briceno
                 </a>
-                <p>Trovali Cofounder</p>
+                <p>Fundador - Trovali</p>
               </div>
               <div className="py-[52px] px-8 md:col-span-2 justify-between flex flex-col bg-gradient-to-r from-[#e8e7fb] to-[#fffffb]">
                 <div className="header mb-6">
-                The facial recognition market value is expected to reach $8.5 billion by 2025—a significant growth from $3.8 billion in 2020 as organizations realize its immense business potential.
+                Se espera que el valor del mercado de reconocimiento facial alcance los $8.5 mil millones para 2025, lo que representa un crecimiento significativo desde los $3.8 mil millones en 2020 a medida que las organizaciones comprenden su inmenso potencial empresarial.
                 </div>
                 <div className="flex flex-col">
                   <a

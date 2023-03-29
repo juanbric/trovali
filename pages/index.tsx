@@ -26,16 +26,16 @@ export default function Home() {
     "Mediante su tecnología de detección y reconocimiento facial, Trovali simplifica la publicación externa del contenido fotográfico escolar en regla con las normativas de protección de datos. Además, la plataforma organiza automáticamente las fotos por identidad de estudiante, lo que facilita la búsqueda y localización de las fotos de cualquier estudiante, ahorrando tiempo y esfuerzo al personal escolar. Esto no solo ayuda a las escuelas a mantener la privacidad del estudiante, sino que también facilita al personal la gestión, organización y acceso a las fotos de los estudiantes, y les ayuda a utilizarlas con fines educativos. La tecnología de Trovali es la solución definitiva para las escuelas que buscan gestionar eficientemente las fotos de los estudiantes mientras garantizan el cumplimiento de la privacidad estudiantil.";
   const platformHighlights =
     "Ofrecemos una experiencia de gestión de fotos nativa sin problemas, amigable y de clase mundial, diseñada para ser continuamente mejorada y ampliada con nuevas funciones. Con Trovali, los usuarios pueden estar seguros de que tendrán acceso a las últimas tecnologías y funciones para una gestión eficiente y efectiva de fotos escolares.";
-  const featureOneTitle = "Permission tracking";
+  const featureOneTitle = "Seguimiento de permisos";
   const featureOneDescription =
-    "Know which students have granted permission for their pictures to be shared externally by checking any picture on our platform";
-  const featureTwoTitle = "Seamless photo searchability";
+    "Verifica en nuestra plataforma el permiso de cada estudiante para compartir sus fotos externamente.";
+  const featureTwoTitle = "Búsqueda de fotos";
   const featureTwoDescription =
-    "Easily locate any student's photos with our platform's automatic way of organizing photos by identity every time staff does an upload.";
-  const featureThreeTitle = "Commercial use of photos";
+    "Encuentra fácilmente las fotos de cualquier estudiante con nuestra plataforma que las organiza automáticamente por identidad.";
+  const featureThreeTitle = "Uso comercial de fotos";
   const featureThreeDescription =
-    "Access and compile student photos accumulated throughout the years to use them for commercial purposes such as selling them to student's parents.";
-  const jpQuote = `"Trovali simplifies student photo management for school staff, eliminating the need to manually check permissions before sharing a photo. As the founder, I'm proud to say that our innovative solution empowers school staff to focus on more meaningful tasks by automating the tedious process of managing student photos and permissions."`;
+    "Accede y compila las fotos de los estudiantes acumuladas a lo largo de los años para usarlas con fines comerciales, como venderlas a sus padres.";
+  const jpQuote = `"Trovali simplifica la gestión de fotos de los estudiantes para el personal escolar, eliminando la necesidad de verificar manualmente los permisos antes de compartir una foto. Como fundador, me enorgullece decir que nuestra solución innovadora permite al personal escolar enfocarse en tareas más significativas al automatizar el tedioso proceso de gestionar las fotos y permisos de los estudiantes."`;
   return (
     <>
       <Schema

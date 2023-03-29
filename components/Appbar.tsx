@@ -25,7 +25,7 @@ const Appbar = () => {
             </div>
 
             {/* Grande */}
-            <div className="hidden md:flex items-center">
+            <div className="hidden bold md:flex items-center">
               <Link className="" href={"/nosotros"}>
                 Nosotros
               </Link>
@@ -84,7 +84,7 @@ const Appbar = () => {
                     </Link>
                   </MenuItem> */}
                   <MenuItem>
-                    <Link className="pl-4 py-1" href={"/precios"}>
+                    <Link className="pl-4 py-1 bold" href={"/precios"}>
                       Precios
                     </Link>
                   </MenuItem>

@@ -34,6 +34,12 @@ body {
   font-weight: 500;
 }
 
+.title-small {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
 .sub-title {
   line-height: 30px;
   font-size: 20px;
@@ -49,6 +55,12 @@ body {
 .logo {
   line-height: 28px;
   font-size: 23px;
+  font-weight: 700;
+}
+
+.bold {
+  line-height: 21px;
+  font-size: 16px;
   font-weight: 700;
 }
 

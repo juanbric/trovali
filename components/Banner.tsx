@@ -16,7 +16,7 @@ const Banner = ({
               <h1 className="title title-mobile mb-4">{headerTitle}</h1>
               <div className="sub-title mb-8">{headerSubTitle}</div>
               <Link
-                className="hover:bg-[#1b1393] bg-blue copy-big text-white py-2 rounded-[6px] px-4"
+                className="hover:bg-[#1b1393] bg-blue copy-big text-white py-3 rounded-[6px] px-6"
                 href={"/nosotros"}
               >
                 Aprende más

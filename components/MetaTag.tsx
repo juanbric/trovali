@@ -22,6 +22,7 @@ export const MetaTag = ({
         }
       />
       <meta name="distribution" content="Global" />
+      <link rel="canonical" href={url} />
       <meta name="revisit-after" content="21 days" />
       <meta name="creator" content="Juan Pablo Briceno" />
       <link rel="icon" href="https://svgshare.com/i/pdv.svg" />

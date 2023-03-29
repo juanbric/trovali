@@ -11,7 +11,7 @@ const pricing = () => {
   const image = "https://svgshare.com/i/pdv.svg";
 
   const secondSubTitle =
-    "Our pricing is tailored to meet the specific needs of each school. Contact us to discuss your requirements and receive a personalized quote. Discover how easy and affordable it is to streamline student photo management with Trovali";
+    "En Trovali, nos adaptamos a las necesidades de cada escuela en cuanto a la gestión de fotos de estudiantes. Contáctanos para discutir tus requerimientos y obtener un presupuesto personalizado. Descubre lo sencillo y útil que es simplificar la gestión de fotos de estudiantes con nuestra tecnología.";
 
   return (
     <>
@@ -25,7 +25,7 @@ const pricing = () => {
       <MetaTag
         title={title}
         description={description}
-        url={URL}
+        url={URL + "precios"}
         image={image}
       />
 
@@ -33,16 +33,19 @@ const pricing = () => {
         <div className="px-4 lg:px-8 w-auto lg:w-[1130px]">
           <div className="md:grid md:grid-cols-2 md:gap-14">
             <div className="pt-[52px] pb-8 md:py-[128px] flex-col flex items-start justify-center">
+            <h1 className="title-mobile md:title mb-4">
+                  Precios
+                </h1>
               <div className="mb-6 copy-big">{secondSubTitle}</div>
               <Link
-                className="hover:bg-[#1b1393] bg-blue copy-big text-white py-2 rounded-[6px] px-4"
-                href={"/contact"}
+                className="hover:bg-[#1b1393] bg-blue copy-big text-white py-3 rounded-[6px] px-6"
+                href={"/contacto"}
               >
-                Get in touch
+                Habla con nosotros
               </Link>
             </div>
             <div className="pb-[52px] md:py-[128px] flex items-center justify-center ">
-              <img src="/pricing.jpg" className="rounded-[6px]" />
+              <img src="/pricing.png" className="rounded-[6px]" />
             </div>
           </div>
         </div>
