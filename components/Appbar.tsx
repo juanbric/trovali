@@ -26,8 +26,8 @@ const Appbar = () => {
 
             {/* Grande */}
             <div className="hidden md:flex items-center">
-              <Link className="" href={"/about"}>
-                About
+              <Link className="" href={"/nosotros"}>
+                Nosotros
               </Link>
               {/* <Link className="px-4" href={"/features"}>
                 Features
@@ -35,17 +35,17 @@ const Appbar = () => {
               <Link className="" href={"/benefits"}>
                 Benefits
               </Link> */}
-              <Link className="px-6" href={"/pricing"}>
-                Pricing
+              <Link className="px-6" href={"/precios"}>
+                Precios
               </Link>
               {/* <Link className="pr-6" href={"/news"}>
                 News
               </Link> */}
               <Link
                 className="bg-blue hover:bg-[#1b1393] text-white py-2 rounded-[6px] px-4 "
-                href={"/contact"}
+                href={"/contacto"}
               >
-                Get in touch
+                Contacto
               </Link>
             </div>
 
@@ -69,8 +69,8 @@ const Appbar = () => {
                 </div>
                 <MenuList className="flex-col flex">
                   <MenuItem>
-                    <Link className="pl-4 py-1" href={"/about"}>
-                      About
+                    <Link className="pl-4 py-1" href={"/nosotros"}>
+                      Nosotros
                     </Link>
                   </MenuItem>
                   {/* <MenuItem>
@@ -84,21 +84,21 @@ const Appbar = () => {
                     </Link>
                   </MenuItem> */}
                   <MenuItem>
-                    <Link className="pl-4 py-1" href={"/pricing"}>
-                      Pricing
+                    <Link className="pl-4 py-1" href={"/precios"}>
+                      Precios
                     </Link>
                   </MenuItem>
                   <MenuItem>
-                    <Link className="pl-4 py-1" href={"/news"}>
+                    {/* <Link className="pl-4 py-1" href={"/news"}>
                       News
-                    </Link>
+                    </Link> */}
                   </MenuItem>
 
                   <Link
                     className="bg-blue text-white py-2 rounded-[6px] px-4 mx-4 my-1 w-auto"
-                    href={"/contact"}
+                    href={"/contacto"}
                   >
-                    Get in touch
+                    Contacto
                   </Link>
                 </MenuList>
               </Menu>
