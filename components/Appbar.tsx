@@ -38,9 +38,9 @@ const Appbar = () => {
               <Link className="px-6" href={"/precios"}>
                 Precios
               </Link>
-              {/* <Link className="pr-6" href={"/news"}>
-                News
-              </Link> */}
+              <Link className="pr-6" href={"/blog"}>
+                Blog
+              </Link>
               <Link
                 className="bg-blue hover:bg-[#1b1393] text-white py-2 rounded-[6px] px-4 "
                 href={"/contacto"}

@@ -18,7 +18,7 @@ export const MetaTag = ({
       <meta
         name="keywords"
         content={
-          "front end software developer, las palmas de gran canaria, españa, spain, desarrollador frontend, seo"
+          "inteligencia artificial, ai, artificial intelligence, detección facial, reconocimiento facial, privacidad estudiantil, organización de fotos, búsqueda de fotos, escuelas, las palmas de gran canaria, españa, spain, privacidad de mi hijo"
         }
       />
       <meta name="distribution" content="Global" />
