@@ -57,7 +57,7 @@ const Blog = ({ blogs }: { blogs: any }) => {
             </p>
           </div>
         </div>
-      <Spacer size={60} />
+      <Spacer size={30} />
       <div className="lg:flex lg:justify-center lg:items-center">
         <div className="px-4 lg:px-8 w-auto lg:w-[1180px]">
           <div className="md:grid md:grid-cols-3 md:gap-8">
