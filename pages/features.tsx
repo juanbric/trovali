@@ -7,7 +7,7 @@ const features = () => {
     "Simplify student permissions with our advanced face recognition technology. Upload photos and forms in one place, easily check permission status and ...";
   const title = "Trovali | Face recognition | Student privacy compliance";
   const date = new Date();
-  const image = "https://svgshare.com/i/pdv.svg";
+  const image = "https://svgshare.com/i/raw.svg";
 
   const headerTitle = "Shaping the iGaming frontend of tomorrow.";
   const secondTitle =

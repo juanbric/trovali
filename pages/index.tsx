@@ -15,7 +15,7 @@ export default function Home() {
   const title =
     "Trovali | Reconocimiento facial | Privacidad de los estudiantes";
   const date = new Date();
-  const image = "https://svgshare.com/i/pdv.svg";
+  const image = "https://svgshare.com/i/raw.svg";
 
   const headerTitle =
     "Simplificando la gestión de fotos y privacidad de los estudiantes";
