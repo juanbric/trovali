@@ -1,1 +1,1 @@
-export const URL = "https://www.trovali.vercel.app/"
+export const URL = "https://www.trovaliai.com/"
