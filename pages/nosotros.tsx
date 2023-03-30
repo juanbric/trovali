@@ -7,7 +7,7 @@ const Nosotros = () => {
     "Simplifica los permisos estudiantiles con nuestra avanzada tecnología de reconocimiento facial. Acate el cumplimiento GDPR de la privacidad estudiantil. Cargue fotos y formularios en un solo lugar, verifique fácilmente el estado de los permisos y...";
   const title = "Nosotros | Trovali | Reconocimiento facial";
   const date = new Date();
-  const image = "https://svgshare.com/i/pdv.png";
+  const image = "https://svgshare.com/i/raw.svg";
 
   const headerTitle = "Transformando la gestión de fotos estudiantiles";
   const secondTitle =

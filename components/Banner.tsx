@@ -8,9 +8,9 @@ const Banner = ({
   headerSubTitle: string;
 }) => {
   return (
-    <div className="lg:flex lg:justify-center lg:items-center">
+    <div className="shadow-x lg:flex lg:justify-center lg:items-center">
       <div className="px-6 lg:px-8 w-auto lg:w-[1130px]">
-        <section className="py-8 md:py-20">
+        <section className="py-8 md:py-32">
           <div className="flex-col-reverse flex md:flex-row md:gap-14 items-center justify-center">
             <div className="">
               <h1 className="title title-mobile mb-4">{headerTitle}</h1>
