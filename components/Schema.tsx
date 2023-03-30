@@ -39,7 +39,7 @@ const Schema = ({
                 "name": "Juan Pablo Briceno | Front End Developer | Las Palmas de Gran Canaria | Spain",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://svgshare.com/i/pdv.svg"
+                  "url": "https://i.ibb.co/gF5m2ZY/Group-48095686.png"
                 }
               },
               "copyrightYear": 2023,

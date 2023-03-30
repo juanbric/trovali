@@ -8,7 +8,7 @@ const Precios = () => {
     "Simplify student permissions with our advanced face recognition technology. Upload photos and forms in one place, easily check permission status and ...";
   const title = "Trovali | Face recognition | Student privacy compliance";
   const date = new Date();
-  const image = "https://svgshare.com/i/raw.svg";
+  const image = "https://i.ibb.co/gF5m2ZY/Group-48095686.png";
 
   const secondSubTitle =
     "En Trovali, nos adaptamos a las necesidades de cada escuela en cuanto a la gestión de fotos de estudiantes. Contáctanos para discutir tus requerimientos y obtener un presupuesto personalizado. Descubre lo sencillo y útil que es simplificar la gestión de fotos de estudiantes con nuestra tecnología.";
