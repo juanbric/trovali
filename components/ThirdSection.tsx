@@ -18,7 +18,7 @@ const ThirdSection = ({
   return (
     <div className="lg:flex lg:justify-center lg:items-center">
       <div className="px-4 lg:px-8 w-auto lg:w-[1130px]">
-        <section className="pt-[52px] pb-8 md:py-[128px] flex flex-col items-center justify-center">
+        <section className="pt-[52px] pb-8 md:py-[100px] flex flex-col items-center justify-center">
           <div className="max-w-[811px] text-center">
             <p className="title pb-4">Lo mejor de nuestra plataforma</p>
             <h2 className="sub-title mb-16">{platformHighlights}</h2>

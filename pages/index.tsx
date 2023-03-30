@@ -7,15 +7,18 @@ import SecondSection from "@/components/SecondSection";
 import ThirdSection from "@/components/ThirdSection";
 import QuoteCard from "@/components/QuoteCard";
 import BlogCard from "@/components/BlogCard";
+import VinyardPlayer from "@/components/VinyardPlayer";
 
 export default function Home() {
   const description =
     "Simplifique los permisos estudiantiles con nuestra avanzada tecnología de reconocimiento facial. Acate el cumplimiento GDPR de la privacidad estudiantil. Cargue fotos y formularios en un solo lugar, verifique fácilmente el estado de los permisos y...";
-  const title = "Trovali | Reconocimiento facial | Privacidad de los estudiantes";
+  const title =
+    "Trovali | Reconocimiento facial | Privacidad de los estudiantes";
   const date = new Date();
   const image = "https://svgshare.com/i/pdv.svg";
 
-  const headerTitle = "Simplificando la gestión de fotos y privacidad de los estudiantes";
+  const headerTitle =
+    "Simplificando la gestión de fotos y privacidad de los estudiantes";
   const headerSubTitle =
     "Hola, somos Trovali. Una nueva empresa que aprovecha el poder de la inteligencia artificial para simplificar la gestión de fotos de estudiantes en las escuelas. Nuestra tecnología te ayuda a identificar cada estudiante junto a sus permisos correspondientes, y a organizar automáticamente las fotos por la identidad del estudiante para facilitar la búsqueda. ";
   const secondTitle =
@@ -56,12 +59,6 @@ export default function Home() {
       <Banner headerTitle={headerTitle} headerSubTitle={headerSubTitle} />
 
       {/* Second section */}
-      <SecondSection
-        secondTitle={secondTitle}
-        secondSubTitle={secondSubTitle}
-        secondCopy={secondCopy}
-      />
-
       <ThirdSection
         platformHighlights={platformHighlights}
         featureOneTitle={featureOneTitle}
@@ -71,9 +68,14 @@ export default function Home() {
         featureThreeTitle={featureThreeTitle}
         featureThreeDescription={featureThreeDescription}
       />
+      <SecondSection
+        secondTitle={secondTitle}
+        secondSubTitle={secondSubTitle}
+        secondCopy={secondCopy}
+      />
 
+      <VinyardPlayer />
       <QuoteCard jpQuote={jpQuote} />
-
     </>
   );
 }

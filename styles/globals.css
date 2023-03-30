@@ -11,6 +11,8 @@ body {
   overflow-x: hidden;
 }
 
+
+
 /* section {
   position: relative;
   display: flex;
@@ -147,6 +149,28 @@ body {
   content: "-   ";
   margin-right: 0.5em;
 }
+
+#backlink {
+  display: none !important;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-left: 3%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe,
+.video-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 50%; /* adjust for centering */
+  width: 89%;
+  height: 50%;
+}
+
 
 /* Colors */
 .red {
