@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.trovaliai.com/
+
+# Sitemaps
+Sitemap: https://www.trovaliai.com/sitemap.xml

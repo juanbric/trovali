@@ -4,23 +4,39 @@ const BlogCard = ({
   img,
   title,
   description,
+  date,
+  author,
 }: {
   img: any;
   title: any;
   description: any;
+  date: any;
+  author: any;
 }) => {
+  const options = { year: "numeric", month: "short", day: "numeric" };
+  //@ts-ignore
+  const localDate = new Date(date).toLocaleDateString("es-ES", options);
+
   return (
-    <div className="flex flex-col md:max-w-[250px]">
+    <>
       <img
         src={img}
-        className=" rounded-[6px] object-cover h-[200px] w-full mb-4"
+        className=" rounded-[2px] object-cover h-[200px] w-full"
         width={800}
         height={300}
       />
-      <h2 className="mb-3 mt-4 header text-start">{title}</h2>
+      <h2 className="mb-3 mt-4 blog-card-title text-start shorten-title">
+        {title}
+      </h2>
       <h3 className="copy shorten-p text-start">{description}</h3>
-      <Spacer size={8} />
-    </div>
+      <Spacer size={12} />
+      <p className="sub-sub-title">Read full post</p>
+      <Spacer size={12} />
+      <hr className="h-px bg-gray-200 border-0 dark:bg-white" />
+      <Spacer size={12} />
+      <p className="sub-copy">{author} • {localDate}</p>
+      <Spacer size={12} />
+    </>
   );
 };
 

@@ -117,8 +117,8 @@ export const Contacto = () => {
       <SimpleModal
         isOpen={successModal}
         onClose={() => setSuccessModal(false)}
-        headerText={"Thanks!"}
-        description={"We will get back to you shortly"}
+        headerText={"¡Gracias!"}
+        description={"Responderemos tu mensaje en breve"}
       />
     </>
   );

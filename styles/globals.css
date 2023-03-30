@@ -48,10 +48,22 @@ body {
   font-weight: 400;
 }
 
+.sub-sub-title {
+  line-height: 27px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .header {
   line-height: 26px;
   font-size: 22px;
   font-weight: 400;
+}
+
+.blog-card-title {
+  line-height: 26px;
+  font-size: 22px;
+  font-weight: 800;
 }
 
 .logo {
@@ -67,10 +79,10 @@ body {
 }
 
 .copy-big {
-  line-height: 24px;
   font-size: 16px;
   font-weight: 400;
 }
+
 
 .copy {
   line-height: 21px;
@@ -86,15 +98,20 @@ body {
   opacity: 0.6;
 }
 
+.huge-title {
+  line-height: 62px;
+  font-size: 52px;
+  font-weight: 900;
+}
 /* Markdown */
 
 
 .markdown h2 {
   line-height: 24px;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 24px;
   margin-top: 20px;
-  margin-bottom: 4px;
+  font-weight: 600;
+  margin-bottom: 6px;
 }
 .markdown h3 {
   line-height: 22px;
@@ -148,6 +165,12 @@ body {
 .markdown li::before {
   content: "-   ";
   margin-right: 0.5em;
+}
+
+.markdown img {
+  object-fit: cover;
+  max-height: 300px;
+  width: 70%;
 }
 
 #backlink {
