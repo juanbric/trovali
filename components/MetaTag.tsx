@@ -27,7 +27,7 @@ export const MetaTag = ({
       <meta name="creator" content="Juan Pablo Briceno" />
       <link rel="icon" href="https://svgshare.com/i/pdv.svg" />
       <meta http-equiv="content-language" content="en" />
-      <meta name="twitter:site" content="@juanbrisol" />
+      <meta name="twitter:site" content="@juanbri_sol" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:card" content="summary_large_image" />
