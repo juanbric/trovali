@@ -17,8 +17,7 @@ const VidyardPlayer = () => {
 
   return (
     <div className="lg:flex lg:justify-center lg:items-center">
-      <div className="px-4 lg:px-8 w-auto py-14 relative lg:w-[1130px]">
-        <p className="title-mobile md:title mb-6 text-center">Demo Video</p>
+      <div className="lg:px-8 w-auto py-14 relative lg:w-[1130px]">
         <div className="video-wrapper">
           <img
             style={{ display: "block" }}
