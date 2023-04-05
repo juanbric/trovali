@@ -8,12 +8,12 @@ import ThirdSection from "@/components/ThirdSection";
 import QuoteCard from "@/components/QuoteCard";
 import BlogCard from "@/components/BlogCard";
 import VinyardPlayer from "@/components/VinyardPlayer";
+import Invite from "@/components/Invite";
 
 export default function Home() {
   const description =
     "Simplifique los permisos estudiantiles con nuestra avanzada tecnología de reconocimiento facial. Acate el cumplimiento GDPR de la privacidad estudiantil. Cargue fotos y formularios en un solo lugar, verifique fácilmente el estado de los permisos y...";
-  const title =
-    "Trovali | Reconocimiento facial | Privacidad de estudiantes";
+  const title = "Trovali | Reconocimiento facial | Privacidad de estudiantes";
   const date = new Date();
   const image = "https://i.ibb.co/gF5m2ZY/Group-48095686.png";
 
@@ -75,6 +75,7 @@ export default function Home() {
       />
 
       <VinyardPlayer />
+      <Invite id={undefined} />
       <QuoteCard jpQuote={jpQuote} />
     </>
   );
