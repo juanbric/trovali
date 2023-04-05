@@ -22,8 +22,8 @@ const VidyardPlayer = () => {
           <img
             style={{ display: "block" }}
             className="vidyard-player-embed"
-            src="https://play.vidyard.com/LpyTmnd5b39fyyVFFXn9Ko.jpg"
-            data-uuid="LpyTmnd5b39fyyVFFXn9Ko"
+            src="https://play.vidyard.com/Kr6j2rwTnwQsWptQFD9kC8.jpg"
+            data-uuid="Kr6j2rwTnwQsWptQFD9kC8"
             data-v="4"
             data-type="inline"
           />

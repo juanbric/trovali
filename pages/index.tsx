@@ -76,7 +76,7 @@ export default function Home() {
       />
 
       <QuoteCard jpQuote={jpQuote} />
-      <Invite id={"invite"} />
+      <Invite id={"invite"} /> 
     </>
   );
 }

@@ -99,12 +99,12 @@ const Appbar = () => {
                   </MenuItem>
 
                   <MenuItem>
-                    <button
+                    <div
                       className="pl-4 py-1"
                       onClick={() => handleClick("invite")}
                     >
                       Habla con nosotros
-                    </button>
+                    </div>
                   </MenuItem>
 
                   <MenuItem>
