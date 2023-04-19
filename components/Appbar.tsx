@@ -7,8 +7,20 @@ import {
   MenuItem,
   MenuList,
 } from "@chakra-ui/react";
+import { useDisclosure } from "@chakra-ui/react";
 
 const Appbar = () => {
+  const { onOpen, onClose, isOpen } = useDisclosure();
+  const handleClick = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const yOffset = -70;
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+    onClose();
+  };
   return (
     <div className="bg-[#fffffb] py-1 lg:py-3 sticky top-0 z-10 shadow-x">
       <div className="lg:flex lg:justify-center lg:items-center">
@@ -41,10 +53,7 @@ const Appbar = () => {
               <Link className="pr-6" href={"/blog"}>
                 Blog
               </Link>
-              <Link
-                className="bg-blue hover:bg-[#1b1393] text-white py-2 rounded-[6px] px-4 "
-                href={"/contacto"}
-              >
+              <Link className="" href={"/contacto"}>
                 Contacto
               </Link>
             </div>
@@ -84,22 +93,30 @@ const Appbar = () => {
                     </Link>
                   </MenuItem> */}
                   <MenuItem>
-                    <Link className="pl-4 py-1 bold" href={"/precios"}>
+                    <Link className="pl-4 py-1" href={"/precios"}>
                       Precios
                     </Link>
                   </MenuItem>
+
+                  <MenuItem>
+                    <div
+                      className="pl-4 py-1"
+                      onClick={() => handleClick("invite")}
+                    >
+                      Habla con nosotros
+                    </div>
+                  </MenuItem>
+
                   <MenuItem>
                     {/* <Link className="pl-4 py-1" href={"/news"}>
                       News
                     </Link> */}
                   </MenuItem>
-
-                  <Link
-                    className="bg-blue text-white py-2 rounded-[6px] px-4 mx-4 my-1 w-auto"
-                    href={"/contacto"}
-                  >
-                    Contacto
-                  </Link>
+                  <MenuItem>
+                    <Link className="pl-4 py-1" href={"/contacto"}>
+                      Contacto
+                    </Link>
+                  </MenuItem>
                 </MenuList>
               </Menu>
             </div>

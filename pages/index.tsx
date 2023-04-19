@@ -68,15 +68,15 @@ export default function Home() {
         featureThreeTitle={featureThreeTitle}
         featureThreeDescription={featureThreeDescription}
       />
+      <VinyardPlayer />
       <SecondSection
         secondTitle={secondTitle}
         secondSubTitle={secondSubTitle}
         secondCopy={secondCopy}
       />
 
-      <VinyardPlayer />
-      <Invite id={undefined} />
       <QuoteCard jpQuote={jpQuote} />
+      <Invite id={"invite"} /> 
     </>
   );
 }

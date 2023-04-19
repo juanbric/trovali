@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#fffffb] py-1 lg:py-16">
+    <div className="bg-[#fffffb] py-1 lg:py-4">
       <div className="lg:flex lg:justify-center lg:items-center">
         <div className="px-4 lg:px-8 w-auto lg:w-[1130px]">
           <div className="flex justify-between items-center">

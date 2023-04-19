@@ -5,6 +5,7 @@ import MetaTag from "../components/MetaTag";
 import Schema from "../components/Schema";
 import { SimpleModal } from "../components/SimpleModal";
 import Spacer from "../components/Spacer";
+import Invite from "@/components/Invite";
 
 export const Contacto = () => {
   const [successModal, setSuccessModal] = useState<boolean>(false);
@@ -59,7 +60,7 @@ export const Contacto = () => {
         <div className="px-4 lg:px-8 w-auto lg:w-[1130px]">
           <section className="">
             <div className="md:grid md:grid-cols-2 md:gap-14">
-              <div className="py-[52px] md:py-[128px]">
+              <div className="py-[52px] md:pt-[128px]">
                 <img
                   src="/contact.png"
                   className="rounded-[6px] md:max-w-[500px] md:mb-0"
@@ -110,6 +111,7 @@ export const Contacto = () => {
                 </form>
               </div>
             </div>
+            <Invite id={""}/>
           </section>
         </div>
       </div>

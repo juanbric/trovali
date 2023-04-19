@@ -59,6 +59,11 @@ body {
   font-size: 22px;
   font-weight: 400;
 }
+.header-title {
+  line-height: 36px;
+  font-size: 28px;
+  font-weight: 600;
+}
 
 .blog-card-title {
   line-height: 26px;
@@ -180,7 +185,7 @@ body {
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
-  padding-left: 3%;
+  padding-left: 8%;
   height: 0;
   overflow: hidden;
 }
@@ -191,7 +196,7 @@ body {
   top: 0;
   left: 50%; /* adjust for centering */
   width: 89%;
-  height: 50%;
+  height: 90%;
 }
 
 

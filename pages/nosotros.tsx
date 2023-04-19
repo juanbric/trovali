@@ -1,6 +1,8 @@
 import MetaTag from "@/components/MetaTag";
 import Schema from "@/components/Schema";
 import Link from "next/link";
+import { useDisclosure } from "@chakra-ui/react";
+import Invite from "@/components/Invite";
 
 const Nosotros = () => {
   const description =
@@ -28,7 +30,17 @@ const Nosotros = () => {
   const featureThreeTitle = "Reconocimiento facial";
   const featureThreeDescription =
     "Después de que se alinea el rostro, el paso final es compararlo con una base de datos de rostros conocidos para identificar a la persona. Esto se logra extrayendo características únicas del rostro, como la distancia entre los ojos o la forma de la mandíbula, y comparando estas características con una base de datos de rostros conocidos.";
-
+  const { onOpen, onClose, isOpen } = useDisclosure();
+  const handleClick = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const yOffset = -70;
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+    onClose();
+  };
   return (
     <>
       <Schema
@@ -53,12 +65,12 @@ const Nosotros = () => {
                 <h1 className="title-mobile md:title mb-8 md:mb-12">
                   {headerTitle}
                 </h1>
-                <Link
-                  className="hover:bg-[#1b1393] bg-blue copy-big text-white py-3 rounded-[6px] px-6"
-                  href={"/contacto"}
+                <button
+                  className="hover:bg-[#1b1393] bold bg-blue text-white py-3 rounded-[6px] px-6"
+                  onClick={() => handleClick("invite")}
                 >
                   Habla con nosotros
-                </Link>
+                </button>
               </div>
               <div className="">
                 <img
@@ -105,7 +117,7 @@ const Nosotros = () => {
                 {faceRecognition}
               </h2>
             </div>
-            <div className="text-start md:grid md:grid-cols-3 md:gap-16">
+            <div className="text-start md:grid md:grid-cols-3 md:gap-16 md:pb-8">
               <div className="flex flex-col max-w-[370px]">
                 <img
                   src="/detection.png"
@@ -131,6 +143,7 @@ const Nosotros = () => {
                 <h3 className="pb-16 md:pb-0">{featureThreeDescription}</h3>
               </div>
             </div>
+            <Invite id={"invite"} />
           </section>
         </div>
       </div>

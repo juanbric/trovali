@@ -1,6 +1,8 @@
+import Invite from "@/components/Invite";
 import MetaTag from "@/components/MetaTag";
 import Schema from "@/components/Schema";
 import Link from "next/link";
+import { useDisclosure } from "@chakra-ui/react";
 import React from "react";
 
 const Precios = () => {
@@ -12,7 +14,17 @@ const Precios = () => {
 
   const secondSubTitle =
     "En Trovali, nos adaptamos a las necesidades de cada escuela en cuanto a la gestión de fotos de estudiantes. Contáctanos para discutir tus requerimientos y obtener un presupuesto personalizado. Descubre lo sencillo y útil que es simplificar la gestión de fotos de estudiantes con nuestra tecnología.";
-
+  const { onOpen, onClose, isOpen } = useDisclosure();
+  const handleClick = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const yOffset = -70;
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+    onClose();
+  };
   return (
     <>
       <Schema
@@ -35,17 +47,18 @@ const Precios = () => {
             <div className="pt-[52px] pb-8 md:py-[128px] flex-col flex items-start justify-center">
               <h1 className="title-mobile md:title mb-4">Precios</h1>
               <div className="mb-6 copy-big">{secondSubTitle}</div>
-              <Link
-                className="hover:bg-[#1b1393] bg-blue copy-big text-white py-3 rounded-[6px] px-6"
-                href={"/contacto"}
+              <button
+                className="hover:bg-[#1b1393] bold bg-blue text-white py-3 rounded-[6px] px-6"
+                onClick={() => handleClick("invite")}
               >
                 Habla con nosotros
-              </Link>
+              </button>
             </div>
             <div className="pb-[52px] md:py-[128px] flex items-center justify-center ">
               <img src="/pricing.png" className="rounded-[6px]" />
             </div>
           </div>
+          <Invite id={"invite"} />
         </div>
       </section>
     </>
